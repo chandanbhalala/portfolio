@@ -57,7 +57,7 @@ a{
 .navbar-nav li a{
 	color: #32d3ed !important;
 	font-size: 18px !important;
-	font-weight: 700;
+	font-weight: 500;
 	font-family: 'Josefin Sans', sans-serif;
 }
 .fixed{
@@ -201,37 +201,23 @@ a{
 .about_me{
 	padding: 100px 0;
 }
-
 .my_img{
 	position: relative;
-	padding: 0 !important;
-}
-.my-img img{
-	z-index: 9;
-}
-.my_img:hover:after{
-	visibility: hidden;
-	opacity: 0;
 }
 .my_img:after{
 	position: absolute;
-	content: "";
-	background: url(../image/pattern.png);
-	width: 100%;
-	height: 100%;
-	left: 5%;
-	top: 4%;
+	content: '';
+	background-image: url(../image/pattern.png);
+	width: 95%;
+	height: 90%;
+	top: 3%;
+	left: 10%;
 	z-index: 1;
 	transition: all 0.5s ease 0s;
 }
-.my_img:before{
-	position: absolute;
-	content: '';
-	border:8px solid #32d3ed;
-	width: 100%;
-	height: 100%;
-	top:7%;
-	left:10%;
+.my_img:hover:after{
+	opacity: 0;
+	visibility: hidden;
 }
 .title_line h3{
 	font-size: calc(1.5vw + 1rem);
